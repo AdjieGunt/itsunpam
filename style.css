@@ -1,0 +1,102 @@
+
+@import 'fonts/BalooTamma-Regular.ttf';
+@import 'https://fonts.googleapis.com/css?family=Baloo+Tamma';
+
+:root {
+	--blue-pr: #003366;
+	--blue-sc: #003399;
+	--yell : #FFDE00;
+}
+
+body, html {
+	padding: 0px;
+	margin: 0px;
+}
+
+header {
+	display: flex;
+	flex-flow: row wrap; 
+	margin: 0px;
+	width: 100%;
+	height: 90px;
+	background-color: var(--blue-pr);	
+}
+
+nav {
+	margin: 0px;
+	width: 50%;
+	height: 90px;
+	float: right;		
+}
+
+nav > ul {
+	margin: 0px;
+	font-family: 'Baloo Tamma', cursive;
+	list-style: none;
+}
+
+nav > ul > li > a{
+	color: var(--yell);
+	text-decoration: none;
+	float: left;
+	display: block;
+	padding: 30px;
+	font-size: 20px;
+}
+
+nav, li, a:hover {
+	color: #fff;
+}
+
+#logo {
+	float: left;
+	font-family: 'Baloo Tamma';
+	display: block;
+	cursor:pointer;
+	height: 90px;
+	width: 25%;	
+}
+
+#logo h2 {
+	font-size: 50px;
+	margin: 0px;
+	height: 100%;
+	padding-top: 10px;
+	padding-bottom: auto;
+	padding-left: 150px;
+	color: white;
+}
+
+
+.search {
+	float: left;	
+	background-color: #0C2C52;
+}
+
+.search form input[type="text"] {
+	background-color: #0C2C52;
+	height: 50%;
+	border: 0px;
+	padding: 10px;
+	color: white;
+	font-size: 15px;
+	margin-top:25px; 
+}
+
+.search button {
+	height: 60%;
+	cursor: pointer;
+}
+
+.search .search-btn {
+	background: url('search-icon.png') center center no-repeat #FFCC00;
+	height: 70px;
+	width: 70px;
+	cursor: pointer;
+	border: 0px;
+	background-size: 20px;
+}
+
+
+
+
