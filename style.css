@@ -1,6 +1,7 @@
 
 @import 'fonts/BalooTamma-Regular.ttf';
 @import 'https://fonts.googleapis.com/css?family=Baloo+Tamma';
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,700';
 
 :root {
 	--blue-pr: #003366;
@@ -18,20 +19,28 @@ header {
 	flex-flow: row wrap; 
 	margin: 0px;
 	width: 100%;
-	height: 90px;
+	height: 150px;
 	background-color: var(--blue-pr);	
+}
+
+#top-nav {
+	margin: 0px;
+	height: 50px;
+	width: 100%;
+	background: #eee;
 }
 
 nav {
 	margin: 0px;
-	width: 50%;
-	height: 90px;
+	width: 70%;
+	height: 120px;
 	float: right;		
 }
 
 nav > ul {
 	margin: 0px;
-	font-family: 'Baloo Tamma', cursive;
+	font-family: 'Roboto';
+	/*font-weight: bold;*/
 	list-style: none;
 }
 
@@ -40,8 +49,8 @@ nav > ul > li > a{
 	text-decoration: none;
 	float: left;
 	display: block;
-	padding: 30px;
-	font-size: 20px;
+	padding: 38px;
+	font-size: 18px;
 }
 
 nav, li, a:hover {
