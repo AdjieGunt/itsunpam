@@ -15,6 +15,15 @@
     line-height: 0;
 }
 
+a {
+	text-decoration: none;
+	color: #111;
+}
+
+a:hover {
+	color: var(--blue-pr);
+}
+
 body, html {
 	padding: 0px;
 	margin: 0px;
@@ -27,7 +36,7 @@ header {
 	flex-flow: row wrap; 
 	margin: 0px;
 	width: 100%;
-	height: 130px;	
+	height: auto;	
 	font-family: 'Roboto';
 }
 .container {
@@ -60,14 +69,20 @@ header {
 	width: 300px;
 }
 
-#top-nav .email p {
+#top-nav .contact {
 	color: #222;
+	font-size: 13px;
+	line-height: 0.5em;
+	margin-top: 10px;	
+}
 
+#top-nav .contact a {
+	color: #888;
 }
 
 #top-nav .search {
 	border: 1px solid #999;
-	border-radius: 5px;
+	border-radius: 25px;
 	/*height: 40px; */
 	width: 300px;
 	margin-top: 6px;
@@ -104,8 +119,6 @@ header {
 	background-color: var(--blue-pr);
 	width:100%;
 	margin: 0px;
-	height: 70%;
-
 }
 
 nav {
@@ -121,7 +134,7 @@ nav > ul {
 	width: 100%;
 	height: 100%;
 	padding-top: 10px;
-
+	margin-bottom: 0px;
 	padding-left: 0px;
 	font-weight: bold;
 	list-style: none;
@@ -136,28 +149,28 @@ nav > ul > li{
     margin-top:10px; 
     /* width: 100px; */
     height: 50px;
-    font-size: 15px;
+    font-size: 13px;
     text-align: center;
 }
 
 nav > ul > li > a{
 	color: var(--yell);
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 15px 15px;
     margin-right:5px;
     margin-left:5px;  	
 }
 
 nav > ul > li > a:hover {
 	color: #fff;
-	border: 2px solid var(--yell);
-	border-radius: 5px;
+	/*border: 2px solid var(--yell);*/
+	border-radius: 25px;
 }
 
 nav li .send-article {
-	border: 3px solid var(--yell);
-	border-radius: 10px;
-	padding: 15px;
+	border: 2px solid var(--yell);
+	border-radius: 25px;
+	padding: 10px;
 	margin: 21px;
 }
 
@@ -210,6 +223,53 @@ nav li .send-article {
 	background-size: 20px;
 }
 
+content {
+	margin: 0px;
+	padding: 0px;
+}
 
+#slider {
+	background-color: #263238;
+	width: 100%; 	
+	height: 500px;
+}
 
+#slider .canvas {
+	background-color: #eee;
+	width: 80%;
+	height:425px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	position: absolute;
+    	right: 10%;
+    	left: 10%;
+}
+
+#slider .featured {
+	background: #ddd;
+	width: 65%;
+	height: 100%;
+}
+
+#slider .featured .thumbArea{
+	width: 100%;
+	height: 100%;
+}
+
+#slider .featured .thumbArea img{
+	width: 100%;
+	height: 100%;
+}
+
+#slider .featured .thumbArea .postMeta{
+	background: rgba(255, 255 ,255, 0.5);
+	width: 80%;
+	height: 100px;
+	padding: 10px;
+	position: relative;
+	left: 100px;
+	bottom:150px;
+
+}
 
