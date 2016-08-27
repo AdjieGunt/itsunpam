@@ -13,33 +13,38 @@
 
 <header>
 	<div id="top-nav" class="clearfix">
-	<div class="top_col">
-		<div class="email">
-			<a href="mailto:info@itsunpam.com"><p>info@itsunpam.com</p></a>
+		<div class="container">
+			<div class="top_col">
+				<div class="email">
+					<a href="mailto:info@itsunpam.com"><p>info@itsunpam.com</p></a>
+				</div>
+			</div>
+			<div class="top_col">
+				<form action="../search?q=" method="GET" class="search">
+					<i class="fa fa-search"></i>
+					<input name="q" class="search-input" placeholder="Search.."></input>
+					<input type="submit" class="search-button" value="Go"></input>
+				</form>
+			</div>
 		</div>
 	</div>
-	<div class="top_col">
-		<form action="../search?q=" method="GET" class="search">
-			<i class="fa fa-search"></i>
-			<input name="q" class="search-input" placeholder="Search.."></input>
-			<input type="submit" class="search-button" value="Go"></input>
-		</form>
+	<div class="top-header">
+		<div class="container">
+			<div id="logo">
+					<h2>ITS<span>UNPAM</span></h2>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Kabar Kampus</a></li>
+					<li><a href="#">Rekomendasi</a></li>
+					<li><a href="#">Komunitas</a></li>
+					<li><a href="#">Event</a></li>
+					<li ><a class="send-article" href="">Kirim Tulisan</a></li>
+				</ul>
+			</nav>
+		</div>
 	</div>
-	</div>
-	<div id="logo">
-		
-			<h2>ITS<span>UNPAM</span></h2>
-	</div>
-	<nav>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Kabar Kampus</a></li>
-			<li><a href="#">Rekomendasi</a></li>
-			<li><a href="#">Komunitas</a></li>
-			<li><a href="#">Event</a></li>
-			<li ><a class="send-article" href="">Kirim Tulisan</a></li>
-		</ul>
-	</nav>
 	<!-- <div class="search">
 		<form>
 		<input type="text" placeholder="Search ..." name="search"></input>
@@ -47,7 +52,15 @@
 		</form>
 	</div> -->
 </header>
-
+<content>
+	<div id="slider">
+		<div id="slider-canvas">
+			<div class="featured">
+				
+			</div>
+		</div>
+	</div>
+</content>
 
 
 </body>
