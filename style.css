@@ -2,6 +2,7 @@
 @import 'fonts/BalooTamma-Regular.ttf';
 @import 'https://fonts.googleapis.com/css?family=Baloo+Tamma';
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,700';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
 
 :root {
 	--blue-pr: #003366;
@@ -28,6 +29,14 @@ body, html {
 	padding: 0px;
 	margin: 0px;
 	font-family: 'Roboto', sans-serif;
+}
+
+h3, h1 {
+	font-family:  'Roboto', sans-serif;
+}
+
+.red {
+	background-color: red !important;
 }
 
 header {
@@ -176,7 +185,6 @@ nav li .send-article {
 
 #logo {
 	float: left;
-	font-family: 'Baloo Tamma';
 	display: block;
 	cursor:pointer;
 	height: 90px;
@@ -184,6 +192,7 @@ nav li .send-article {
 }
 
 #logo h2 {
+	font-family: 'Baloo Tamma';
 	font-size: 50px;
 	margin: 0px;
 	height: 100%;
@@ -232,9 +241,12 @@ content {
 	background-color: #263238;
 	width: 100%; 	
 	height: 500px;
+	font-family: 'Open Sans', sans-serif !important;
 }
 
 #slider .canvas {
+	display: flex;
+	flex-flow:row wrap; 
 	background-color: #eee;
 	width: 80%;
 	height:425px;
@@ -260,6 +272,7 @@ content {
 #slider .featured .thumbArea img{
 	width: 100%;
 	height: 100%;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
 }
 
 #slider .featured .thumbArea .postMeta{
@@ -272,4 +285,57 @@ content {
 	bottom:150px;
 
 }
+
+#slider .featured-side {
+	width: 35%;
+	height: 100%;
+}
+
+#slider .featured-side .item {
+	display: flex;
+	flex-flow:row wrap;  
+	width: 94%;
+	height: 23%;
+	padding: 10px;
+	margin-top:20px; 
+	background: #e3e3e3;
+}
+
+#slider .featured-side .item .itemThumb {
+	background-size: cover;
+	width: 35%;
+	height: 80%;
+}
+
+#slider .featured-side .item .itemMeta {
+	width: 60%;
+	height: 100%;
+	padding: 0px;
+}
+
+#slider .featured-side .item .itemMeta .label {
+	width: 300px;
+	height: 100%;
+	padding: 5px; 
+	margin: 10px;
+	color: #fff;
+	border-radius: 2px;
+	font-size: 10px;
+	background-color: grey;
+}
+
+#slider .featured-side .item .itemThumb img{
+	/*background-size: cover;*/
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+
+}
+
+#slider .featured-side .item h3{
+	word-wrap: break-word;
+	font-size: 16px;
+	margin-left: 10px;
+}
+
 
