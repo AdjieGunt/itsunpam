@@ -273,6 +273,7 @@ content {
 #slider .featured .thumbArea{
 	width: 100%;
 	height: 100%;
+	object-fit: cover;
 }
 
 #slider .featured .thumbArea img{
