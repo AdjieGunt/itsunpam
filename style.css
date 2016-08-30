@@ -325,7 +325,7 @@ content {
 #slider .featured-side .item .itemThumb {
 	background-size: cover;
 	width: 35%;
-	height: 80%;
+	height: 80px;
 }
 
 #slider .featured-side .item .itemMeta {
@@ -458,3 +458,49 @@ article {
 	color: #fff;
 }
 
+.flex {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+aside {
+	/*background: #eee;*/
+	width: 30%;
+	height: auto;
+	margin: 10px 20px;
+	padding: 5px;
+}
+
+.widget {
+	margin: 5px 0px;
+}
+
+.widget-title {
+	width: 100%;
+    height: 50px;
+    display: table;
+    text-align: center;
+    margin-bottom: 10px;
+	background: var(--blue-pr);
+	color: #fff;
+}
+
+.widget-title h3 {
+	 display: table-cell;
+    vertical-align: middle;
+}
+
+.popular-post {
+	width: 100%;
+	height: auto;
+}
+
+.popular-post .thumb {
+	width: 100%;
+	height: 40%;
+}
+
+.popular-post .thumb img{
+	width: 100%;
+	height: 100%;
+}
